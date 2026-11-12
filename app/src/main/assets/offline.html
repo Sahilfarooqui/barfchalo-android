@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+html,body{height:100%;margin:0}
+body{display:flex;align-items:center;justify-content:center;background:radial-gradient(700px 400px at 70% -10%,#1e3a8a 0%,transparent 60%),radial-gradient(500px 300px at 0% 10%,#0e7490 0%,transparent 55%),#0b1424;color:#eef5ff;font:16px/1.5 system-ui,sans-serif;text-align:center}
+.c{padding:28px;max-width:340px}
+.flake{font-size:64px;animation:f 3s ease-in-out infinite}
+@keyframes f{50%{transform:translateY(-8px) rotate(20deg)}}
+h1{font-size:24px;margin:12px 0 6px}
+p{color:#9fb3d1;margin:0 0 22px}
+button{height:52px;padding:0 28px;border:0;border-radius:16px;font-weight:800;font-size:17px;color:#06101f;background:linear-gradient(90deg,#7dd3fc,#a5b4fc);box-shadow:0 10px 30px rgba(125,211,252,.25)}
+small{display:block;margin-top:18px;color:#6b7fa0}
+</style></head><body><div class="c">
+<div class="flake">❄️</div>
+<h1>No internet connection</h1>
+<p>BarfChalo needs internet for live snow forecasts, routes and maps. Check Wi-Fi or mobile data and try again.</p>
+<button onclick="window.BarfChaloApp&&BarfChaloApp.retry()">Try again</button>
+<small>Hill roads often lose signal — plan your trip before you leave network.</small>
+</div>
+<script>window.addEventListener('online',function(){window.BarfChaloApp&&BarfChaloApp.retry()})</script>
+</body></html>
